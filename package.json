@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "js-component-flux": "^1.0.1",
+    "js-component-router": "^1.0.1",
     "js-component-vdom": "^1.0.1"
   }
 }

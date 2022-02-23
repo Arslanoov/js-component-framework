@@ -5,12 +5,14 @@ import { countSelector, decrease, increase } from '../store/counterReducer'
 
 const h = createVNode;
 
-const App = ({ count, increase, decrease }) => {
+const Counter = ({ count, increase, decrease }) => {
   return (
-    <div {...{ class: 'container', 'data-count': String(count) }}>
-      <div>Count: {String(count)}</div>
-      <button onclick={decrease}>-1</button>
-      <button onclick={increase}>+1</button>
+    <div>
+      <div class='container'>
+        <div>Count: {String(count)}</div>
+        <button class='increase' onclick={decrease}>-1</button>
+        <button class='decrease' onclick={increase}>+1</button>
+      </div>
     </div>
   );
 };
@@ -25,7 +27,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default (store) => connect(
-  App,
+  Counter,
   store,
   mapStateToProps,
   mapDispatchToProps
