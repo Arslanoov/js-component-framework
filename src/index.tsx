@@ -4,7 +4,6 @@ import { Router, RouterMode } from 'js-component-router';
 import { store } from './store';
 
 import Home from './components/Home';
-import About from './components/About';
 import Counter from './components/Counter';
 
 export const router = new Router({

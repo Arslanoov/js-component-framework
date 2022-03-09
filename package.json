@@ -1,4 +1,5 @@
 {
+  "description": "Simple JS framework implementation",
   "scripts": {
     "serve": "npx webpack serve"
   },
